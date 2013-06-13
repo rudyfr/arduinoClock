@@ -1,0 +1,437 @@
+\hypertarget{class_clock}{\section{Clock Class Reference}
+\label{class_clock}\index{Clock@{Clock}}
+}
+
+
+A \hyperlink{class_clock}{Clock} Class for Arduino.  
+
+
+
+
+{\ttfamily \#include $<$Clock.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_clock_adbc370eb6b5f8d01645cf440188160a8}{Clock} ()
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{class_clock}{Clock} object. \end{DoxyCompactList}\item 
+void \hyperlink{class_clock_a92d1b6aaae12a00f3627924eb473c0da}{set\-Time} (unsigned long time)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{class_clock}{Clock} time in milliseconds. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_clock_a591c3c531785b7442f91aecc1b7cbb36}{get\-Time} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_clock}{Clock} time in milliseconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_clock_a37b31e0a04e24483780398f4d53e3b70}{set\-Day\-Of\-Week} (int day\-Of\-Week)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{class_clock}{Clock} Day of Week. \end{DoxyCompactList}\item 
+int \hyperlink{class_clock_a430fe7500838a0d978e8b00d01e26811}{get\-Day\-Of\-Week} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_clock}{Clock} Day of Week The day of week follows the Unix convention for day of week\-:\par
+ \begin{TabularC}{2}
+\hline
+\rowcolor{lightgray}\PBS\centering {\bf Value }&{\bf Day of Week}\\\cline{1-2}
+\PBS\centering 1 &Monday \\\cline{1-2}
+\PBS\centering 2 &Tuesday \\\cline{1-2}
+\PBS\centering 3 &Wednesday \\\cline{1-2}
+\PBS\centering 4 &Thursday \\\cline{1-2}
+\PBS\centering 5 &Friday \\\cline{1-2}
+\PBS\centering 6 &Saturday \\\cline{1-2}
+\PBS\centering 7 &Sunday \\\cline{1-2}
+\end{TabularC}
+\end{DoxyCompactList}\item 
+void \hyperlink{class_clock_ac0eb2849ca938074df4d3f81d18861a1}{set\-Hour} (int hour)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_clock}{Clock} hour. \end{DoxyCompactList}\item 
+int \hyperlink{class_clock_aba95277d2adba907d4c9fd0fa18db62b}{get\-Hour} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_clock}{Clock} hour. \end{DoxyCompactList}\item 
+void \hyperlink{class_clock_a4107811dfffbafaea5b54fcdf236c5f1}{set\-Minute} (int minute)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_clock}{Clock} minute. \end{DoxyCompactList}\item 
+int \hyperlink{class_clock_a8b874de3e806c727ad06f8e696f1f875}{get\-Minute} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_clock}{Clock} minute. \end{DoxyCompactList}\item 
+void \hyperlink{class_clock_a2f5112d5b6060a6a88d006a3a57cf29b}{set\-Second} (int second)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_clock}{Clock} second. \end{DoxyCompactList}\item 
+int \hyperlink{class_clock_a2617d807434e44e6b0234fbfe0b16ae2}{get\-Second} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_clock}{Clock} seconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_clock_a6a2f193f6381ad83c324decbf1e4a8da}{print\-Time} ()
+\begin{DoxyCompactList}\small\item\em Prints out the current \hyperlink{class_clock}{Clock} time. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_clock_ad9b7f50ade881de6a61403a7bc17bbf3}{run} ()
+\begin{DoxyCompactList}\small\item\em Runs the \hyperlink{class_clock}{Clock}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_clock}{Clock} Class for Arduino. 
+
+The \hyperlink{class_clock}{Clock} is based on\-: \href{http://www.faludi.com/examples/open-source-arduino-clock,}{\tt http\-://www.\-faludi.\-com/examples/open-\/source-\/arduino-\/clock,} but this version is object-\/based. Converted to a libtrary by following the tutorial at\-: \href{http://arduino.cc/en/Hacking/LibraryTutorial}{\tt http\-://arduino.\-cc/en/\-Hacking/\-Library\-Tutorial}. Finally, the code comments are in Doxygen style. 
+
+Definition at line 49 of file Clock.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_clock_adbc370eb6b5f8d01645cf440188160a8}{\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\subsubsection[{Clock}]{\setlength{\rightskip}{0pt plus 5cm}Clock\-::\-Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_adbc370eb6b5f8d01645cf440188160a8}
+
+
+Construct a \hyperlink{class_clock}{Clock} object. 
+
+The \hyperlink{class_clock}{Clock} object is initialized and ready to run starting with Z\-E\-R\-O values, except for the tick counter, which is set to the value returned by millis() at time of construction.\par
+ \begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_clock}{Clock} is initialized 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Address of new \hyperlink{class_clock}{Clock} object 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Clock.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_clock_a430fe7500838a0d978e8b00d01e26811}{\index{Clock@{Clock}!get\-Day\-Of\-Week@{get\-Day\-Of\-Week}}
+\index{get\-Day\-Of\-Week@{get\-Day\-Of\-Week}!Clock@{Clock}}
+\subsubsection[{get\-Day\-Of\-Week}]{\setlength{\rightskip}{0pt plus 5cm}int Clock\-::get\-Day\-Of\-Week (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a430fe7500838a0d978e8b00d01e26811}
+
+
+Get the \hyperlink{class_clock}{Clock} Day of Week The day of week follows the Unix convention for day of week\-:\par
+ \begin{TabularC}{2}
+\hline
+\rowcolor{lightgray}\PBS\centering {\bf Value }&{\bf Day of Week}\\\cline{1-2}
+\PBS\centering 1 &Monday \\\cline{1-2}
+\PBS\centering 2 &Tuesday \\\cline{1-2}
+\PBS\centering 3 &Wednesday \\\cline{1-2}
+\PBS\centering 4 &Thursday \\\cline{1-2}
+\PBS\centering 5 &Friday \\\cline{1-2}
+\PBS\centering 6 &Saturday \\\cline{1-2}
+\PBS\centering 7 &Sunday \\\cline{1-2}
+\end{TabularC}
+
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+unchanged 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\-\_\-day\-Of\-Week Day of Week 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Clock.\-cpp.
+
+\hypertarget{class_clock_aba95277d2adba907d4c9fd0fa18db62b}{\index{Clock@{Clock}!get\-Hour@{get\-Hour}}
+\index{get\-Hour@{get\-Hour}!Clock@{Clock}}
+\subsubsection[{get\-Hour}]{\setlength{\rightskip}{0pt plus 5cm}int Clock\-::get\-Hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_aba95277d2adba907d4c9fd0fa18db62b}
+
+
+Get the \hyperlink{class_clock}{Clock} hour. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+unchanged 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\-\_\-hour Hour in 24 hour format 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a8b874de3e806c727ad06f8e696f1f875}{\index{Clock@{Clock}!get\-Minute@{get\-Minute}}
+\index{get\-Minute@{get\-Minute}!Clock@{Clock}}
+\subsubsection[{get\-Minute}]{\setlength{\rightskip}{0pt plus 5cm}int Clock\-::get\-Minute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a8b874de3e806c727ad06f8e696f1f875}
+
+
+Get the \hyperlink{class_clock}{Clock} minute. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+unchanged 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\-\_\-minute Minute 
+\end{DoxyReturn}
+
+
+Definition at line 137 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a2617d807434e44e6b0234fbfe0b16ae2}{\index{Clock@{Clock}!get\-Second@{get\-Second}}
+\index{get\-Second@{get\-Second}!Clock@{Clock}}
+\subsubsection[{get\-Second}]{\setlength{\rightskip}{0pt plus 5cm}int Clock\-::get\-Second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a2617d807434e44e6b0234fbfe0b16ae2}
+
+
+Get the \hyperlink{class_clock}{Clock} seconds. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+unchanged 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\-\_\-second Seconds 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a591c3c531785b7442f91aecc1b7cbb36}{\index{Clock@{Clock}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!Clock@{Clock}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Clock\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a591c3c531785b7442f91aecc1b7cbb36}
+
+
+Get the \hyperlink{class_clock}{Clock} time in milliseconds. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+unchanged 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\-\_\-time Time in milliseconds 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a6a2f193f6381ad83c324decbf1e4a8da}{\index{Clock@{Clock}!print\-Time@{print\-Time}}
+\index{print\-Time@{print\-Time}!Clock@{Clock}}
+\subsubsection[{print\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::print\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a6a2f193f6381ad83c324decbf1e4a8da}
+
+
+Prints out the current \hyperlink{class_clock}{Clock} time. 
+
+Format of time is \char`\"{}$<$\-Day of Week$>$, $<$hour$>$\-:$<$minute$>$\-:$<$second$>$\char`\"{} \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]Prepend 0 to single-\/digit hour, minute, and second \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 236 of file Clock.\-cpp.
+
+\hypertarget{class_clock_ad9b7f50ade881de6a61403a7bc17bbf3}{\index{Clock@{Clock}!run@{run}}
+\index{run@{run}!Clock@{Clock}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}boolean Clock\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_clock_ad9b7f50ade881de6a61403a7bc17bbf3}
+
+
+Runs the \hyperlink{class_clock}{Clock}. 
+
+If the \hyperlink{class_clock}{Clock} is at least 1 second behind, 1 second is added to the \hyperlink{class_clock}{Clock} object. If the \hyperlink{class_clock}{Clock} is not run at least once a second, it will fall further behind. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]Verify rollover of internal clock does not cause incorrect operation. The internal clock will roll over after about 5 weeks. 
+
+Add flag to run silently 
+
+Add flag to jump to current time without running through each state 
+
+Add setters and getters for every second day and every third day 
+
+Use avr/pgmspace library to minimize sram footprint 
+
+Investigate further sram space reduction (through memory layout) 
+
+Add support for Calendar day and month 
+
+Add support for Time Zones \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+boolean True if \hyperlink{class_clock}{Clock} updated time, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 287 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a37b31e0a04e24483780398f4d53e3b70}{\index{Clock@{Clock}!set\-Day\-Of\-Week@{set\-Day\-Of\-Week}}
+\index{set\-Day\-Of\-Week@{set\-Day\-Of\-Week}!Clock@{Clock}}
+\subsubsection[{set\-Day\-Of\-Week}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::set\-Day\-Of\-Week (
+\begin{DoxyParamCaption}
+\item[{int}]{day\-Of\-Week}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a37b31e0a04e24483780398f4d53e3b70}
+
+
+Set the \hyperlink{class_clock}{Clock} Day of Week. 
+
+\begin{DoxyPrecond}{Precondition}
+day\-Of\-Week is an int 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+time is set to param 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Bounds-\/check day of week \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em day\-Of\-Week} & New Day of Week value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Clock.\-cpp.
+
+\hypertarget{class_clock_ac0eb2849ca938074df4d3f81d18861a1}{\index{Clock@{Clock}!set\-Hour@{set\-Hour}}
+\index{set\-Hour@{set\-Hour}!Clock@{Clock}}
+\subsubsection[{set\-Hour}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::set\-Hour (
+\begin{DoxyParamCaption}
+\item[{int}]{hour}
+\end{DoxyParamCaption}
+)}}\label{class_clock_ac0eb2849ca938074df4d3f81d18861a1}
+
+
+Sets the \hyperlink{class_clock}{Clock} hour. 
+
+\begin{DoxyPrecond}{Precondition}
+hour is a value between 0 and 23 inclusive 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The \hyperlink{class_clock}{Clock} hour is set to hour 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Bounds-\/check hour \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em hour} & 0$<$=hour$<$=23 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a4107811dfffbafaea5b54fcdf236c5f1}{\index{Clock@{Clock}!set\-Minute@{set\-Minute}}
+\index{set\-Minute@{set\-Minute}!Clock@{Clock}}
+\subsubsection[{set\-Minute}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::set\-Minute (
+\begin{DoxyParamCaption}
+\item[{int}]{minute}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a4107811dfffbafaea5b54fcdf236c5f1}
+
+
+Sets the \hyperlink{class_clock}{Clock} minute. 
+
+\begin{DoxyPrecond}{Precondition}
+minute is a value between 0 and 59 inclusive 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The \hyperlink{class_clock}{Clock} hour is set to minute 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Bounds-\/check minute \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em minute} & 0$<$=minute$<$=59 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a2f5112d5b6060a6a88d006a3a57cf29b}{\index{Clock@{Clock}!set\-Second@{set\-Second}}
+\index{set\-Second@{set\-Second}!Clock@{Clock}}
+\subsubsection[{set\-Second}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::set\-Second (
+\begin{DoxyParamCaption}
+\item[{int}]{second}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a2f5112d5b6060a6a88d006a3a57cf29b}
+
+
+Sets the \hyperlink{class_clock}{Clock} second. 
+
+\begin{DoxyPrecond}{Precondition}
+hour is a value between 0 and 60 inclusive 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The \hyperlink{class_clock}{Clock} hour is set to second 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]Bounds-\/check second \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em second} & 0$<$=second$<$=60 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Clock.\-cpp.
+
+\hypertarget{class_clock_a92d1b6aaae12a00f3627924eb473c0da}{\index{Clock@{Clock}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!Clock@{Clock}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Clock\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}}\label{class_clock_a92d1b6aaae12a00f3627924eb473c0da}
+
+
+Set the \hyperlink{class_clock}{Clock} time in milliseconds. 
+
+\begin{DoxyPrecond}{Precondition}
+time is an unsigned long 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+time is set to param 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Bounds-\/check time \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em time} & New time value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Clock.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Rudy/\-Documents/\-Arduino/libraries/\-Clock/\hyperlink{_clock_8h}{Clock.\-h}\item 
+/\-Users/\-Rudy/\-Documents/\-Arduino/libraries/\-Clock/\hyperlink{_clock_8cpp}{Clock.\-cpp}\end{DoxyCompactItemize}

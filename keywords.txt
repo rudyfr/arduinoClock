@@ -1,0 +1,17 @@
+Clock	KEYWORD1
+run	KEYWORD2
+setTime	KEYWORD2
+getTime	KEYWORD2
+setDayOfWeek	KEYWORD2
+getDayOfWeek	KEYWORD2
+setHour	KEYWORD2
+getHour	KEYWORD2
+setMinute	KEYWORD2
+getMinute	KEYWORD2
+setSecond	KEYWORD2
+getSecond	KEYWORD2
+printTime	KEYWORD2
+addDay	KEYWORD2
+addHour	KEYWORD2
+addMinute	KEYWORD2
+addSecond	KEYWORD2

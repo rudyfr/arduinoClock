@@ -1,0 +1,165 @@
+\hypertarget{_clock_8h}{\section{/\-Users/\-Rudy/\-Documents/\-Arduino/libraries/\-Clock/\-Clock.h File Reference}
+\label{_clock_8h}\index{/\-Users/\-Rudy/\-Documents/\-Arduino/libraries/\-Clock/\-Clock.\-h@{/\-Users/\-Rudy/\-Documents/\-Arduino/libraries/\-Clock/\-Clock.\-h}}
+}
+
+
+Header file for an Arduino-\/based \hyperlink{class_clock}{Clock}.  
+
+
+{\ttfamily \#include \char`\"{}Arduino.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_clock}{Clock}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_clock}{Clock} Class for Arduino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const long int \hyperlink{_clock_8h_aeb8955768e44ec07c90980f34d99b18c}{Z\-E\-R\-O} = 0
+\item 
+const long int \hyperlink{_clock_8h_abc16770e8136c01552fbc7344fee4579}{M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D} = 1000
+\item 
+const long int \hyperlink{_clock_8h_afcc4e02a918e4693680b7beaaab0de05}{S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E} = 60
+\item 
+const long int \hyperlink{_clock_8h_a31736c4cd2bf854e957e3d08bc269c67}{M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R} = 60
+\item 
+const long int \hyperlink{_clock_8h_a7d595355fd517f85a6282894ba8eac24}{H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y} = 24
+\item 
+const long int \hyperlink{_clock_8h_acd8bf4d3c7e4a3efa72d39e055211f5b}{D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K} = 7
+\item 
+const int \hyperlink{_clock_8h_aa73b91cf220dcf2d614041f34c2262a1}{M\-O\-N\-D\-A\-Y} = 1
+\item 
+const int \hyperlink{_clock_8h_a851513bab40791d83efe0925400d7614}{T\-U\-E\-S\-D\-A\-Y} = 2
+\item 
+const int \hyperlink{_clock_8h_a396afa78873342406c76051de59648e5}{W\-E\-D\-N\-E\-S\-D\-A\-Y} = 3
+\item 
+const int \hyperlink{_clock_8h_a2aa24469369e9c8554be397b87a2ace9}{T\-H\-U\-R\-S\-D\-A\-Y} = 4
+\item 
+const int \hyperlink{_clock_8h_acf438c305bfa5db327e697ac334e77a1}{F\-R\-I\-D\-A\-Y} = 5
+\item 
+const int \hyperlink{_clock_8h_a25a270ad55a62b69cdd8970a3a455a75}{S\-A\-T\-U\-R\-D\-A\-Y} = 6
+\item 
+const int \hyperlink{_clock_8h_a9c85d9d47e0dc9c0950317497825e325}{S\-U\-N\-D\-A\-Y} = 7
+\item 
+const char \hyperlink{_clock_8h_a3c5a7188ab75a6845f65a45e3ae0d2a9}{C\-O\-L\-O\-N} = '\-:'
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for an Arduino-\/based \hyperlink{class_clock}{Clock}. The \hyperlink{class_clock}{Clock} is object-\/based. The Class includes methods to set, retrieve, and print out the current time. \begin{DoxyAuthor}{Author}
+Rudy Rimland 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2012 -\/ 2013 Rudy Rimland 
+\end{DoxyCopyright}
+\begin{DoxyVersion}{Version}
+1.\-0b 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+T\-H\-E S\-O\-F\-T\-W\-A\-R\-E I\-S P\-R\-O\-V\-I\-D\-E\-D \char`\"{}\-A\-S I\-S\char`\"{}, W\-I\-T\-H\-O\-U\-T W\-A\-R\-R\-A\-N\-T\-Y O\-F A\-N\-Y K\-I\-N\-D, E\-X\-P\-R\-E\-S\-S O\-R I\-M\-P\-L\-I\-E\-D, I\-N\-C\-L\-U\-D\-I\-N\-G B\-U\-T N\-O\-T L\-I\-M\-I\-T\-E\-D T\-O T\-H\-E W\-A\-R\-R\-A\-N\-T\-I\-E\-S O\-F M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y, F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E A\-N\-D N\-O\-N\-I\-N\-F\-R\-I\-N\-G\-E\-M\-E\-N\-T. I\-N N\-O E\-V\-E\-N\-T S\-H\-A\-L\-L T\-H\-E A\-U\-T\-H\-O\-R\-S O\-R C\-O\-P\-Y\-R\-I\-G\-H\-T H\-O\-L\-D\-E\-R\-S B\-E L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y C\-L\-A\-I\-M, D\-A\-M\-A\-G\-E\-S O\-R O\-T\-H\-E\-R L\-I\-A\-B\-I\-L\-I\-T\-Y, W\-H\-E\-T\-H\-E\-R I\-N A\-N A\-C\-T\-I\-O\-N O\-F C\-O\-N\-T\-R\-A\-C\-T, T\-O\-R\-T O\-R O\-T\-H\-E\-R\-W\-I\-S\-E, A\-R\-I\-S\-I\-N\-G F\-R\-O\-M, O\-U\-T O\-F O\-R I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E S\-O\-F\-T\-W\-A\-R\-E O\-R T\-H\-E U\-S\-E O\-R O\-T\-H\-E\-R D\-E\-A\-L\-I\-N\-G\-S I\-N T\-H\-E S\-O\-F\-T\-W\-A\-R\-E. 
+\end{DoxyWarning}
+
+
+Definition in file \hyperlink{_clock_8h_source}{Clock.\-h}.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_clock_8h_a3c5a7188ab75a6845f65a45e3ae0d2a9}{\index{Clock.\-h@{Clock.\-h}!C\-O\-L\-O\-N@{C\-O\-L\-O\-N}}
+\index{C\-O\-L\-O\-N@{C\-O\-L\-O\-N}!Clock.h@{Clock.\-h}}
+\subsubsection[{C\-O\-L\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}const char C\-O\-L\-O\-N = '\-:'}}\label{_clock_8h_a3c5a7188ab75a6845f65a45e3ae0d2a9}
+Declared constant 
+
+Definition at line 36 of file Clock.\-h.
+
+\hypertarget{_clock_8h_acd8bf4d3c7e4a3efa72d39e055211f5b}{\index{Clock.\-h@{Clock.\-h}!D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K@{D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K}}
+\index{D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K@{D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K}!Clock.h@{Clock.\-h}}
+\subsubsection[{D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K}]{\setlength{\rightskip}{0pt plus 5cm}const long int D\-A\-Y\-S\-\_\-\-P\-E\-R\-\_\-\-W\-E\-E\-K = 7}}\label{_clock_8h_acd8bf4d3c7e4a3efa72d39e055211f5b}
+Declared constant 
+
+Definition at line 28 of file Clock.\-h.
+
+\hypertarget{_clock_8h_acf438c305bfa5db327e697ac334e77a1}{\index{Clock.\-h@{Clock.\-h}!F\-R\-I\-D\-A\-Y@{F\-R\-I\-D\-A\-Y}}
+\index{F\-R\-I\-D\-A\-Y@{F\-R\-I\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{F\-R\-I\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int F\-R\-I\-D\-A\-Y = 5}}\label{_clock_8h_acf438c305bfa5db327e697ac334e77a1}
+Declared constant 
+
+Definition at line 33 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a7d595355fd517f85a6282894ba8eac24}{\index{Clock.\-h@{Clock.\-h}!H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y@{H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y}}
+\index{H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y@{H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const long int H\-O\-U\-R\-S\-\_\-\-P\-E\-R\-\_\-\-D\-A\-Y = 24}}\label{_clock_8h_a7d595355fd517f85a6282894ba8eac24}
+Declared constant 
+
+Definition at line 27 of file Clock.\-h.
+
+\hypertarget{_clock_8h_abc16770e8136c01552fbc7344fee4579}{\index{Clock.\-h@{Clock.\-h}!M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D@{M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D}}
+\index{M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D@{M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D}!Clock.h@{Clock.\-h}}
+\subsubsection[{M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}const long int M\-I\-L\-L\-I\-S\-\_\-\-P\-E\-R\-\_\-\-S\-E\-C\-O\-N\-D = 1000}}\label{_clock_8h_abc16770e8136c01552fbc7344fee4579}
+Declared constant 
+
+Definition at line 24 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a31736c4cd2bf854e957e3d08bc269c67}{\index{Clock.\-h@{Clock.\-h}!M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R@{M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R}}
+\index{M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R@{M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R}!Clock.h@{Clock.\-h}}
+\subsubsection[{M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}const long int M\-I\-N\-U\-T\-E\-S\-\_\-\-P\-E\-R\-\_\-\-H\-O\-U\-R = 60}}\label{_clock_8h_a31736c4cd2bf854e957e3d08bc269c67}
+Declared constant 
+
+Definition at line 26 of file Clock.\-h.
+
+\hypertarget{_clock_8h_aa73b91cf220dcf2d614041f34c2262a1}{\index{Clock.\-h@{Clock.\-h}!M\-O\-N\-D\-A\-Y@{M\-O\-N\-D\-A\-Y}}
+\index{M\-O\-N\-D\-A\-Y@{M\-O\-N\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{M\-O\-N\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int M\-O\-N\-D\-A\-Y = 1}}\label{_clock_8h_aa73b91cf220dcf2d614041f34c2262a1}
+Declared constant 
+
+Definition at line 29 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a25a270ad55a62b69cdd8970a3a455a75}{\index{Clock.\-h@{Clock.\-h}!S\-A\-T\-U\-R\-D\-A\-Y@{S\-A\-T\-U\-R\-D\-A\-Y}}
+\index{S\-A\-T\-U\-R\-D\-A\-Y@{S\-A\-T\-U\-R\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{S\-A\-T\-U\-R\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int S\-A\-T\-U\-R\-D\-A\-Y = 6}}\label{_clock_8h_a25a270ad55a62b69cdd8970a3a455a75}
+Declared constant 
+
+Definition at line 34 of file Clock.\-h.
+
+\hypertarget{_clock_8h_afcc4e02a918e4693680b7beaaab0de05}{\index{Clock.\-h@{Clock.\-h}!S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E@{S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E}}
+\index{S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E@{S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E}!Clock.h@{Clock.\-h}}
+\subsubsection[{S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}const long int S\-E\-C\-O\-N\-D\-S\-\_\-\-P\-E\-R\-\_\-\-M\-I\-N\-U\-T\-E = 60}}\label{_clock_8h_afcc4e02a918e4693680b7beaaab0de05}
+Declared constant 
+
+Definition at line 25 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a9c85d9d47e0dc9c0950317497825e325}{\index{Clock.\-h@{Clock.\-h}!S\-U\-N\-D\-A\-Y@{S\-U\-N\-D\-A\-Y}}
+\index{S\-U\-N\-D\-A\-Y@{S\-U\-N\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{S\-U\-N\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int S\-U\-N\-D\-A\-Y = 7}}\label{_clock_8h_a9c85d9d47e0dc9c0950317497825e325}
+Declared constant 
+
+Definition at line 35 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a2aa24469369e9c8554be397b87a2ace9}{\index{Clock.\-h@{Clock.\-h}!T\-H\-U\-R\-S\-D\-A\-Y@{T\-H\-U\-R\-S\-D\-A\-Y}}
+\index{T\-H\-U\-R\-S\-D\-A\-Y@{T\-H\-U\-R\-S\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{T\-H\-U\-R\-S\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int T\-H\-U\-R\-S\-D\-A\-Y = 4}}\label{_clock_8h_a2aa24469369e9c8554be397b87a2ace9}
+Declared constant 
+
+Definition at line 32 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a851513bab40791d83efe0925400d7614}{\index{Clock.\-h@{Clock.\-h}!T\-U\-E\-S\-D\-A\-Y@{T\-U\-E\-S\-D\-A\-Y}}
+\index{T\-U\-E\-S\-D\-A\-Y@{T\-U\-E\-S\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{T\-U\-E\-S\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int T\-U\-E\-S\-D\-A\-Y = 2}}\label{_clock_8h_a851513bab40791d83efe0925400d7614}
+Declared constant 
+
+Definition at line 30 of file Clock.\-h.
+
+\hypertarget{_clock_8h_a396afa78873342406c76051de59648e5}{\index{Clock.\-h@{Clock.\-h}!W\-E\-D\-N\-E\-S\-D\-A\-Y@{W\-E\-D\-N\-E\-S\-D\-A\-Y}}
+\index{W\-E\-D\-N\-E\-S\-D\-A\-Y@{W\-E\-D\-N\-E\-S\-D\-A\-Y}!Clock.h@{Clock.\-h}}
+\subsubsection[{W\-E\-D\-N\-E\-S\-D\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int W\-E\-D\-N\-E\-S\-D\-A\-Y = 3}}\label{_clock_8h_a396afa78873342406c76051de59648e5}
+Declared constant 
+
+Definition at line 31 of file Clock.\-h.
+
+\hypertarget{_clock_8h_aeb8955768e44ec07c90980f34d99b18c}{\index{Clock.\-h@{Clock.\-h}!Z\-E\-R\-O@{Z\-E\-R\-O}}
+\index{Z\-E\-R\-O@{Z\-E\-R\-O}!Clock.h@{Clock.\-h}}
+\subsubsection[{Z\-E\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}const long int Z\-E\-R\-O = 0}}\label{_clock_8h_aeb8955768e44ec07c90980f34d99b18c}
+Declared constant 
+
+Definition at line 23 of file Clock.\-h.
+

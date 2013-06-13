@@ -1,0 +1,37 @@
+Copyright (c) 2012-\/2013, Rudy Rimland
+
+Non-\/commercial educational and hobby use permitted
+
+T\-H\-E S\-O\-F\-T\-W\-A\-R\-E I\-S P\-R\-O\-V\-I\-D\-E\-D \char`\"{}\-A\-S I\-S\char`\"{}, W\-I\-T\-H\-O\-U\-T W\-A\-R\-R\-A\-N\-T\-Y O\-F A\-N\-Y K\-I\-N\-D, E\-X\-P\-R\-E\-S\-S O\-R I\-M\-P\-L\-I\-E\-D, I\-N\-C\-L\-U\-D\-I\-N\-G B\-U\-T N\-O\-T L\-I\-M\-I\-T\-E\-D T\-O T\-H\-E W\-A\-R\-R\-A\-N\-T\-I\-E\-S O\-F M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y, F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E A\-N\-D N\-O\-N\-I\-N\-F\-R\-I\-N\-G\-E\-M\-E\-N\-T. I\-N N\-O E\-V\-E\-N\-T S\-H\-A\-L\-L T\-H\-E A\-U\-T\-H\-O\-R\-S O\-R C\-O\-P\-Y\-R\-I\-G\-H\-T H\-O\-L\-D\-E\-R\-S B\-E L\-I\-A\-B\-L\-E F\-O\-R A\-N\-Y C\-L\-A\-I\-M, D\-A\-M\-A\-G\-E\-S O\-R O\-T\-H\-E\-R L\-I\-A\-B\-I\-L\-I\-T\-Y, W\-H\-E\-T\-H\-E\-R I\-N A\-N A\-C\-T\-I\-O\-N O\-F C\-O\-N\-T\-R\-A\-C\-T, T\-O\-R\-T O\-R O\-T\-H\-E\-R\-W\-I\-S\-E, A\-R\-I\-S\-I\-N\-G F\-R\-O\-M, O\-U\-T O\-F O\-R I\-N C\-O\-N\-N\-E\-C\-T\-I\-O\-N W\-I\-T\-H T\-H\-E S\-O\-F\-T\-W\-A\-R\-E O\-R T\-H\-E U\-S\-E O\-R O\-T\-H\-E\-R D\-E\-A\-L\-I\-N\-G\-S I\-N T\-H\-E S\-O\-F\-T\-W\-A\-R\-E.
+
+\section*{Welcome to an Arduino \hyperlink{class_clock}{Clock}.}
+
+This Object Oriented \hyperlink{class_clock}{Clock} for the Arduino Platform is an example of my coding skills. The code comments are in Doxygen style.
+
+
+\begin{DoxyItemize}
+\item This code tested on the Arduino Uno R3
+\item It is not Unicode aware
+\item It consumes approximately 2400 bytes of Program Memory and 171 bytes static ram (workspace)
+\end{DoxyItemize}
+
+\section*{Using the \hyperlink{class_clock}{Clock}}
+
+Place the \hyperlink{class_clock}{Clock} library directory into your Arduino Libraries directory. Sample sketches are in the Examples sub-\/directory.
+\begin{DoxyItemize}
+\item Minimum\-Clock Demonstrates minimum code needed to run the \hyperlink{class_clock}{Clock}
+\item Clock\-With\-Methods Demonstrates \hyperlink{class_clock}{Clock} Class methods
+\end{DoxyItemize}
+
+\section*{\hyperlink{class_clock}{Clock} Object}
+
+The \hyperlink{class_clock}{Clock} maintains state of the current\-:
+\begin{DoxyItemize}
+\item Day of Week
+\item Hour (in 24 hour format)
+\item Minute
+\item Second
+\item Ticks in Milliseconds at last update, which is less than or equal to the output of millis()
+\end{DoxyItemize}
+
+\hyperlink{class_clock_ad9b7f50ade881de6a61403a7bc17bbf3}{Clock.\-run()} updates the current time. If the clock is behind by more than a second, it only adds one second. This guarantees all time states are entered, however if the clock is run less than once per second, it will lose time. 
