@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   Arduino Clock v1.0
 ================
   Copyright (c) 2012-2013, Rudy Rimland
@@ -40,3 +41,9 @@ The Clock maintains state of the current:
 - Ticks in Milliseconds at last update, which is less than or equal to the output of millis()
 
 Clock.run() updates the current time.  If the clock is behind by more than a second, it only adds one second.  This guarantees all time states are entered, however if the clock is run less than once per second, it will lose time.
+=======
+arduinoClock
+============
+
+An object-oriented clock library for Arduino
+>>>>>>> 4f7db2e19133c9e18f7f263053bacaff9fadc79b
